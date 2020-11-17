@@ -8,12 +8,13 @@ sys.path.append('..')
 
 def main():
     options = get_options()
-    matrix = generate_matrix(
-        options.board_grid, options.unit_grid, options.unit_n, options.positions)
+    matrix = generate_matrix(options.board_grid, options.unit_grid, 
+                             options.unit_n,options.positions)
     make_dir(options.outdir)
     save_matrix(matrix, options.outdir + '/' + options.file_name)
     save_fig(matrix, options.outdir + '/' + options.file_name)
-    # raise NotImplementedError  # TODO 使用导入的函数按命令行参数生成数据，包括 mat 文件与 jpg 文件
+    # raise NotImplementedError
+    #  TODO 使用导入的函数按命令行参数生成数据，包括 mat 文件与 jpg 文件
 
 
 if __name__ == "__main__":
