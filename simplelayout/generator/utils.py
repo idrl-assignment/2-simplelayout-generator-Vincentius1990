@@ -9,7 +9,7 @@ import scipy.io as sio
 
 def save_matrix(matrix, file_name):
     # TODO: 存储 matrix 到 file_name.mat, mdict 的 key 为 "matrix"
-    sio.savemat({file_name: matrix})
+    sio.savemat(file_name + '.mat', {'matrix': matrix})
     # raise NotImplementedError
 
 
