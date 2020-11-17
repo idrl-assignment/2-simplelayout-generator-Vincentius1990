@@ -27,11 +27,4 @@ def get_options():
     elif min(options.positions) < 1 | max(options.positions) > n**2:
         sys.exit('组件编号超出范围')
     else:
-        Path(options.outdir).mkdir(parents=True, exist_ok=True)
-        with open(options.outdir + '/' + options.file_name + '.mat', 'w') as _:
-            pass
-        with open(options.outdir + '/' + options.file_name + '.jpg', 'w') as _:
-            pass
-        print('done')
-
-    return options
+        return options
