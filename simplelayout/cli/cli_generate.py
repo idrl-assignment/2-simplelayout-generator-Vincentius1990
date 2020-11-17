@@ -1,6 +1,5 @@
 import argparse
 import sys
-from pathlib import Path
 
 
 def get_options():

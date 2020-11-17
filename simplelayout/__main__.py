@@ -9,7 +9,8 @@ sys.path.append('..')
 def main():
     options = get_options()
     matrix = generate_matrix(
-        options.board_grid, options.unit_grid, options.unit_n, options.positions)
+        options.board_grid, options.unit_grid,
+        options.unit_n, options.positions)
     make_dir(options.outdir)
     save_matrix(matrix, options.outdir + '/' + options.file_name)
     save_fig(matrix, options.outdir + '/' + options.file_name)
